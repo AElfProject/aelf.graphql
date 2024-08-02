@@ -53,19 +53,6 @@ public class MyTemplateModule : AbpModule
 
 This will automatically register the graphql module and setup your project for instrumentation.
 
-#### Orleans
-
-For Orleans, you need to add the following to your SiloBuilder:
-
-```csharp
-hostBuilder.UseOrleans((context, siloBuilder) =>
-{
-    siloBuilder.AddActivityPropagation();
-});
-```
-
-Do the same for the Clientbuilder:
-
 ```csharp
 hostBuilder.UseOrleansClient((context, clientBuilder) =>
 {

@@ -3,12 +3,7 @@ using GraphQL.Client.Abstractions;
 using Microsoft.Extensions.Logging;
 using Volo.Abp.DependencyInjection;
 
-namespace AElf.GraphQlHelper;
-
-public interface IGraphQLHelper
-{
-    Task<T> QueryAsync<T>(GraphQLRequest request);
-}
+namespace AElf.GraphQl;
 
 public class GraphQLHelper : IGraphQLHelper, ISingletonDependency
 {
