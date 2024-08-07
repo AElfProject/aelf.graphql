@@ -18,17 +18,10 @@ This project is a module for ABP and Orleans framework to use aelf graphql. It p
 
 ## Getting Started
 
-### Installation
-
-Run the following command in your project to install this module:
-
-```sh
-dotnet add package AElf.GraphQL
-```
 
 ### Configuration
 
-To configure your aelf graphql service name, version and collector's endpoint, you need to add the following to your appsettings.json file:
+To configure your aelf graphql service name and collector's endpoint, you need to add the following to your appsettings.json file:
 
 ```json
 {
@@ -48,19 +41,6 @@ using AElf.GraphQl;
 [DependsOn(
     typeof(GraphQlModule)
 )]
-public class MyTemplateModule : AbpModule
-```
-
-This will automatically register the graphql module and setup your project for instrumentation.
-
-```csharp
-hostBuilder.UseOrleansClient((context, clientBuilder) =>
-{
-    clientBuilder.AddActivityPropagation();
-});
-```
-
-This will automatically propagate the respective activities of the Orleans grain calls.
 
 ## Examples
 
