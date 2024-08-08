@@ -4,7 +4,6 @@ An GraphQL module for use in ABP and Orleans framework.
 
 - [About The Project](#about-the-project)
 - [Getting Started](#getting-started)
-  - [Installation](#installation)
   - [Configuration](#configuration)
   - [Setup](#setup)
     - [Orleans](#orleans)
