@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <PackageId>AElf.GraphQL</PackageId>
+        <Title>AElf GraphQL</Title>
+        <Authors>AElf</Authors>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.SettingManagement.Application.Contracts" Version="8.0.2" />
+        <PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="6.1.0" />
+        <PackageReference Include="GraphQL.Client" Version="6.1.0" />
+    </ItemGroup>
+</Project>
